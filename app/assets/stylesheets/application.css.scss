@@ -17,13 +17,14 @@
  @import 'bootstrap-sprockets';
  @import 'bootstrap';
  
-
+// Background Gradient
 .navbar, .home-callout {
     background: #00c6ff; /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #00c6ff , #0072ff); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #00c6ff , #0072ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+// Homepage styles
 .home-callout {
     margin-top: -20px;
     padding-top: 75px;
@@ -31,28 +32,21 @@
     color: white;
 }
 
+// Nav Styles
 .navbar {
     border: none;
 }
 
-.navbar-default .navbar-brand {
+// Typography Styles
+.navbar-default .navbar-brand, .navbar-default .navbar-nav li a {
     color: white;
+    &:hover {
+        color: white;
+        opacity: 0.75;
+    }
 }
 
-.navbar-default .navbar-nav li a {
-    color: white;
-}
-
-.navbar-default .navbar-brand:hover {
-    color: white;
-    opacity: 0.75;
-}
-
-.navbar-default .navbar-nav li a:hover {
-    color: white;
-    opacity: 0.75;
-}
- 
+// Custom Fonts
 h1 { 
     font-family: 'Roboto Slab', serif;
 }
